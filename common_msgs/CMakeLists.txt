@@ -13,6 +13,13 @@ add_message_files(
   FILES
   Timevector.msg
 )
+
+# Generate services in the 'srv' folder
+add_service_files(
+  FILES
+  DivTwoNum.srv
+)
+
 # Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
@@ -22,3 +29,6 @@ generate_messages(
 catkin_package(
   CATKIN_DEPENDS geometry_msgs rospy std_msgs
 )
+
+
+
